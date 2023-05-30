@@ -359,8 +359,8 @@ class DragSelectGridViewState extends State<DragSelectGridView>
     if (isSelecting) {
       if (_historyEntry == null) {
         final entry = LocalHistoryEntry(onRemove: () {
-          if(mounted){return;}
-          setState(_selectionManager.clear);
+          // if(mounted){return;}
+          // setState(_selectionManager.clear);
           _notifySelectionChange();
           _historyEntry = null;
         });
