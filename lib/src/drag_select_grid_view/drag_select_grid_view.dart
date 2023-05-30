@@ -363,6 +363,8 @@ class DragSelectGridViewState extends State<DragSelectGridView>
           setState(_selectionManager.clear);
           _notifySelectionChange();
           _historyEntry = null;
+          Navigator.pop(context);
+
         });
         route.addLocalHistoryEntry(entry);
         _historyEntry = entry;
